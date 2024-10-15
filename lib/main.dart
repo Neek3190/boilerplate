@@ -44,8 +44,8 @@ FlutterLocalNotificationsPlugin localNotifications =
     FlutterLocalNotificationsPlugin();
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
   'high_importance_channel',
-  'TrakFit', //title
-  description: "TrakFit",
+  'title', //title
+  description: "description",
   importance: Importance.high,
   playSound: true,
   enableLights: true,
@@ -59,7 +59,7 @@ const AndroidNotificationChannel channel = AndroidNotificationChannel(
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // await GetStorage.init('TrekFit');
+  // await GetStorage.init('storage name');
 /*
   if (AppStorageHelper.getLanguage == "") {
     Get.updateLocale(const Locale(englishCode));
